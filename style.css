@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-image {
+    left: 2rem;
+    top: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    grid-template-columns: 1fr minmax(0, 1200px);
+    grid-auto-rows: minmax(50vh, 1fr);
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1, .container h2 {
+    grid-column: 1 / -1;
+    margin: 1rem 0;
+    font-weight: 700;
+    color: #097dcc;
+  }
+  
+  .container p {
+    grid-column: 1 / -1;
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .container ul {
+    grid-column: 1 / -1;
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+    color: #097dcc;
+  }
+  
+  .container ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .container ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    color: #666;
+  }
+  
+  .container ul li a:hover, .container ul li a:focus {
+    color: #097dcc;
+    text-decoration: underline;
+  }
+  
+  footer {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  footer .currentDate, footer .currentDay {
+    margin-right: 1rem;
+    color: #666;
+  }
+  
+  footer .currentTimeUTC {
+    font-weight: 700;
+    color: #666;
+  }

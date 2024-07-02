@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journey to Becoming a Web Development Expert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header data-testid="header">
+    <img src="https://ca.slack-edge.com/T07466B189M-U07AD7BVDEG-3e30fa5e4759-512" alt="profile picture of chisom somchi" data-testid="slackprofilepicture">
+    <h1 data-testid="slackDisplayedName">chisom somchi<h1>
+    <h2 data-testid="slackEmail">somchi9201@gmail.com</h2>
+  </header>
+  <section id="intro">
+    <div class="container">
+      <h1>My Journey to Becoming a Web Development Expert</h1>
+      <p>Web development has been a passion of mine for some time now, and I'm determined to become an expert in this field.</p>
+      <p>To achieve this goal, I have set out on a journey of learning and practice, continuously seeking out new challenges and opportunities to grow.</p>
+      <p>I'm excited to share my progress and experiences along the way.</p>
+    </div>
+  </section>
+  <main>
+    <div class="container-goals">
+      <h3>My Goals for the Next 2 Years</h3>
+      <h4>Year One Goals:</h4>
+      <ul>
+        <li>
+          <h5>Adaptability</h5>
+          <p>Learn responsive web design and development</p>
+          <p>Build 3 responsive websites for different clients or projects</p>
+        </li>
+        <li>
+          <h5>Cutting-edge Technology</h5>
+          <p>Learn JavaScript frameworks like React or Angular</p>
+          <p>Build 2 web applications using modern frontend technologies</p>
+        </li>
+        <li>
+          <h5>User Engagement</h5>
+          <p>Design and develop interactive elements for 2 web projects</p>
+          <p>Conduct user research and testing to improve user experience</p>
+        </li>
+      </ul>
+      <h5>Year Two Goals:</h5>
+      <ul>
+        <li>
+          <h5>Memorability</h5>
+          <p>Develop a unique and recognizable personal brand</p>
+          <p>Launch a personal website or blog showcasing your skills and experiences</p>
+        </li>
+        <li>
+          <h5>Performance and Accessibility</h5>
+          <p>Optimize website performance for 3 client projects</p>
+          <p>Ensure accessibility compliance for 2 web applications</p>
+        </li>
+        <li>
+          <h5>Continuous Learning</h5>
+          <p>Attend 2 web development conferences or meetups</p>
+          <p>Complete 1 online course or certification program in web development</p>
+        </li>
+      </ul>
+    </div>
+      <section data-testid="linksSection">
+      <h2>Useful Resources</h2>
+      <ul>
+        <li><a href="http://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
+        <li><a href="http://keyword.dog" data-testid="keywordLink">Keyword Dog</a></li>
+        <li><a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer data-testid="footer">
+    <p>Current Time in UTC: <span data-testid="currentTimeUTC"></span></p>
+    <p>Current Day of the Week: <span data-testid="currentDay"></span></p>
+    <p>Current Date: <span data-testid="currentDate"></span></p>
+  </footer>
+  <script>
+    const currentTimeUTC = document.querySelector('[data-testid="currentTimeUTC"]');
+    const currentDay = document.querySelector('[data-testid="currentDay"]');
+    const currentDate = document.querySelector('[data-testid="currentDate"]');
+    
+    setInterval(() => {
+      const now = new Date();
+      currentTimeUTC.textContent = now.toUTCString();
+      currentDay.textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+      currentDate.textContent = now.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+    }, 1000); 
+  </script>
+</body>
+</html>
