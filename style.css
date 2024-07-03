@@ -5,19 +5,18 @@ body {
   }
   
   header {
-    background-color: #fff;
-    padding: 2rem;
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   padding: 2rem;
+   position: relative;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
-  .header-image {
-   width: 100%;
-   max-width: 600px; 
-   margin: 0 auto;
-  }
-  
-  .container {
+
+   .header-image {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+   .container {
     max-width: 1200px;
     grid-template-columns: 1fr minmax(0, 1200px);
     grid-auto-rows: minmax(50vh, 1fr);
