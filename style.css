@@ -89,3 +89,9 @@ body {
     font-weight: 700;
     color: #666;
   }
+ @media(min-width: 1024px) {
+      .two-year-goals {
+          display: grid;
+          grid-template-columns: 50% 50%;
+}
+}
