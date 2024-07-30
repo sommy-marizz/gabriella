@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Animal</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .section-header {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            console.log("Window onload function executed");
+            const header = document.getElementById("main-title");
+            header.innerText = "My Favorite Animal: The Dog";
+            console.log("Header text set");
+            const main = document.querySelector("main");
+            console.log("Main element:", main);
+
+            // Introduction section
+            const introductionHeader = document.createElement("h2");
+            introductionHeader.className = "section-header";
+            introductionHeader.innerText = "Introduction";
+            main.appendChild(introductionHeader);
+            console.log("Introduction header appended");
+            const introduction = document.createElement("p");
+            introduction.innerHTML = "<strong>My favorite animal is the dog.</strong> Dogs are renowned for their loyalty, affection, and playful nature, making them exceptional companions. Their unwavering loyalty and ability to form strong bonds with humans have earned them the title of 'man's best friend. Whether they are providing comfort, protection, or simply a playful presence, dogs bring immense joy and love into our lives.";
+            main.appendChild(introduction);
+            console.log("Introduction paragraph appended");
+
+            // Get all elements with class "section-header"
+            const sectionHeaders = document.getElementsByClassName("section-header");
+            console.log("Section headers:", sectionHeaders);
+
+            // Get all h2 elements
+            const h2Elements = document.getElementsByTagName("h2");
+            console.log("h2 elements:", h2Elements);
+
+            // Get attribute "id" of header element
+            const headerId = header.getAttribute("id");
+            console.log("Header id:", headerId);
+
+            // Appearance section
+            const appearanceHeader = document.createElement("h2");
+            appearanceHeader.className = "section-header";
+            appearanceHeader.innerText = "Appearance";
+            main.appendChild(appearanceHeader);
+            console.log("Appearance header appended");
+            const sizeAndShape = document.createElement("h3");
+            sizeAndShape.innerText = "Size and Shape";
+            main.appendChild(sizeAndShape);
+            console.log("Size and Shape subheader appended");
+            const sizeAndShapeParagraph = document.createElement("p");
+            sizeAndShapeParagraph.innerText = "Dogs come in a wide variety of sizes and shapes, from small breeds like Chihuahuas to large breeds like Great Danes.";
+            main.appendChild(sizeAndShapeParagraph);
+            console.log("Size and Shape paragraph appended");
+            const coatAndColors = document.createElement("h3");
+            coatAndColors.innerText = "Coat and Colors";
+            main.appendChild(coatAndColors);
+            console.log("Coat and Colors subheader appended");
+            const coatAndColorsParagraph = document.createElement("p");
+            coatAndColorsParagraph.innerText = "Dogs can have short or long fur and a range of coat colors, including black, brown, white, and brindle.";
+            main.appendChild(coatAndColorsParagraph);
+            console.log("Coat and Colors paragraph appended");
+
+            // Behavior section
+            const behaviorHeader = document.createElement("h2");
+            behaviorHeader.className = "section-header";
+            behaviorHeader.innerText = "Behavior";
+            main.appendChild(behaviorHeader);
+            console.log("Behavior header appended");
+            const behaviorParagraph = document.createElement("p");
+            behaviorParagraph.innerText = "Dogs are social animals and thrive on human interaction. They can be trained to perform a wide range of tasks, from guiding people with visual impairments to sniffing out explosives. Their playful nature and boundless energy make them popular pets for families and individuals alike.";
+            main.appendChild(behaviorParagraph);
+            console.log("Behavior paragraph appended");
+
+            // Popular Breeds section
+            const popularBreedsHeader = document.createElement("h2");
+            popularBreedsHeader.className = "section-header";
+            popularBreedsHeader.innerText = "Popular Breeds";
+            main.appendChild(popularBreedsHeader);
+            console.log("Popular Breeds header appended");
+            const popularBreedsList = document.createElement("ul");
+            const breeds = [
+                { name: "Labrador Retriever" },
+                { name: "German Shepherd" },
+                { name: "Golden Retriever" },
+                { name: "Bulldog" },
+                { name: "Poodle" }
+            ];
+            breeds.forEach(breed => {
+                const listItem = document.createElement("li");
+                listItem.innerText = breed.name;
+                popularBreedsList.appendChild(listItem);
+                console.log("List item appended:", breed.name);
+            });
+            main.appendChild(popularBreedsList);
+            console.log("Popular Breeds list appended");
+        };
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="main-title"></h1>
+    </header>
+    <main id="main-content" class="content">
+    </main>
+</body>
+
+</html>
